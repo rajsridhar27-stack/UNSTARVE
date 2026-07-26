@@ -76,6 +76,10 @@ button{ font-family: inherit; }
   text-decoration: none;
   color: var(--ink);
 }
+.tm {
+  font-size: 0.5em;
+  vertical-align: super;
+}
 .main-nav{
   display:flex; align-items:center; gap: 32px;
 }
