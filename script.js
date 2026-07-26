@@ -74,7 +74,7 @@ customInput.addEventListener('input', () => {
  
 // ===== UPI donation setup =====
 // Replace this with your real UPI ID (e.g. 'yourname@okaxis', 'yourname@ybl', etc.)
-const UPI_ID = 'yourname@upi';
+const UPI_ID = 'rajsridhar27@okhdfcbank';
 const PAYEE_NAME = 'Unstarve';
  
 document.getElementById('upiIdText').textContent = UPI_ID;
@@ -93,7 +93,7 @@ function buildUpiLink(amount){
 function updateUpiPanel(amount){
   const link = buildUpiLink(amount);
   donateSubmit.href = link;
-  const amt = amount > 0 ? `₹${amount.toLocaleString('en-IN')}` : 'via';
+  const amt = amount > 0 ? `₹${amount.toLocaleString('en-IN')}` : '';
   donateSubmit.textContent = `Pay ${amt} via UPI app`;
  
   // QR code via a free public QR-generation API — encodes the same UPI link.
